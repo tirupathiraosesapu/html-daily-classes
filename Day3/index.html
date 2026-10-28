@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>THis is the the Third day of HTML</h1>
+    <h2>Table Tag</h2>
+    <!-- Table -->
+    <table border="10">
+        <!-- table Row -->
+        <caption>Studen Details</caption>
+        <thead>
+            <!-- <tr>
+                <td colspan="6" align="center">Student Details</td>
+            </tr> -->
+            <tr>
+                <th>S.No</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Age</th>
+                <th>Qualification</th>
+                <th>Location</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>1</td>
+                <!-- <td>Neha</td> -->
+                <td colspan="2">Neha</td>
+                <td>20</td>
+                <td>B.Tech</td>
+                <td rowspan="2">Khammam</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Uday</td>
+                <td rowspan="2">Kumar</td>
+                <!-- <td>9090909090</td> -->
+                <td>25</td>
+                <td>MBA</td>
+                <!-- <td>Khammam</td> -->
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Ravi</td>
+                <!-- <td rowspan="2">Kumar</td> -->
+                <td>25</td>
+                <td>MBA</td>
+                <td>Hyderabad</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td colspan="2">Vishal</td>
+                <!-- <td>Vishal</td> -->
+                <td>23</td>
+                <td>M.Com</td>
+                <td>Nalgonda</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td colspan="6" align="center">Thank You</td>
+            </tr>
+        </tfoot>
+
+    </table>
+    <hr>
+    <!-- Form tag -->
+    <h2>Form Tags</h2>
+    <form action="../Day2/index.html">
+        <!-- input => type = name, email, number, checkbox, radiobox -->
+
+        <fieldset>
+            <legend align="center">Personal information</legend>
+            <!-- First Name -->
+            <!-- <label for="">First Name</label> -->
+            <input type="text" value="" placeholder="Enter your first name"> <br>
+
+            <!-- Last Name -->
+            <label for="lastname">Last Name</label>
+            <input type="text" id="lastname" placeholder="Enter your last name"> <br>
+
+            <!-- Email -->
+            <!-- <label for="">Email</label> -->
+            <input type="email" placeholder="Enter your email"> <br>
+
+            <!-- Password -->
+            <input type="password" placeholder="Enter your password" minlength="6" maxlength="15"><br>
+
+            <!-- Number -->
+            <input type="tel" placeholder="Enter your Mobile Number"> <br>
+        </fieldset>
+
+        <!-- age -->
+        <input type="number" placeholder="Enter your age" min="1" max="100"> <br>
+
+        <!-- Role -->
+        <!-- <label for="">Role</label> -->
+        <input type="hidden" value="User" >
+
+        <!-- Gender -->
+        <label for="gender">Gender</label>
+        <input type="radio" name="gender" id="gender" value="male"> Male
+        <input type="radio" name="gender" id="gender" value="female"> Female
+        <br>
+
+        <!-- Skills -->
+        <label for="">Skills</label>
+        <input type="checkbox" name="skills" value="html" checked> <span>HTML</span>
+        <input type="checkbox" name="skills" value="css" checked disabled> <span>CSS</span>
+        <input type="checkbox" name="skills" value="css" checked> <span>Bootstrap</span>
+        <input type="checkbox" name="skills" value="css"> <span>Python</span>
+        <input type="checkbox" name="skills" value="css"> <span>JS</span>
+        <input type="checkbox" name="skills" value="css"> <span>React</span>
+        <input type="checkbox" name="skills" value="css"> <span>Django</span>
+        <br>
+
+        <select name="" id="">
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="bootstrap">Bootstrap</option>
+            <option value="javascript">javaScript</option>
+            <option value="reactjs">Reactjs</option>
+        </select> <br>
+
+
+        <textarea name="" id="" rows="3" cols="50" placeholder="Entre your description"></textarea> <br>
+
+        <br>
+        <input type="date">
+        <input type="time">
+        <input type="datetime-local">
+        <input type="week">
+        <input type="month">
+        <!-- <input type="year"> -->
+        <br>
+        <input type="file">
+        <input type="color">
+        <input type="range">
+        <!-- <input type="p"> -->
+        
+        <br>
+
+
+
+
+        <!-- <input type="button" value="Submit"> -->
+        <button type="submit">Login</button>
+        <button type="reset">Reset</button>
+        <button type="button">Register</button>
+
+        <input type="submit" value="Signup">
+
+    </form>
+
+</body>
+
+</html>
